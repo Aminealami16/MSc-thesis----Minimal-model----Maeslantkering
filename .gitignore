@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# Ignoring the files in the model updating folder
+05model_updating/csv_files/
+05model_updating/param_spaces/
+05model_updating/random_selections/
