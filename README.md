@@ -62,6 +62,6 @@ In the thesis, I propose three different sensor layouts. In this part of the rep
 `experimental_eigvectors` contains the mode shapes retrieved in `00sensor_placement.ipynb`. They are visualised in `01experimental_mode_shapes.ipynb`.
 
 
-# **4. Model updating optimisations (Only OP1)
+# **4. Model updating optimisations (Only OP1)**
 
 TBD.
