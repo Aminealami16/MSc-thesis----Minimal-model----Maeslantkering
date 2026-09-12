@@ -81,11 +81,12 @@ The model updating folder `05model_updating` must be run in the correct sequence
 └── 06_single_objective_optimisation.ipynb
 ```
 
+In `00constructed_param_spaces.ipynb` the parameter spaces are constructed, followed by flipping modes to have correct updating in `01data_set_flipping.ipynb`. `02MC_optimisation_general.ipynb` (randomly initialised models) and `03MC_optimisation_gaussian.ipynb`(models initialised centred around baseline properties) consist of the Monte Carlo-based optimisations  for the three parameter sets. `04MC_optimisation_plots_general.ipynb` and `05MC_optimisation_plots_gaussian.ipynb` illustrate the results from the Monte Carlo-based optimisations. Finally, `06_single_objective_optimisation.ipynb` does the single objective optimisation and visualises the results. 
+
 
 # **5. Run time**
 
-
-| **Folder**         | **Estimated run time **|
+| **Folder**         | **Estimated run time**|
 |--------------------|-----------------------------|
 | `00models_OP1`       |  $\approx$ 60 min  (model $\approx$ 1 min \& sensitivity analyses $\approx$ 59 min)        |
 | `01models_OP2`         |  $\approx$ 60 min (model $\approx$ 1 min \& sensitivity analyses $\approx$ 59 min)           |
