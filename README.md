@@ -82,7 +82,7 @@ The model updating folder `05model_updating` must be run in the correct sequence
 ```
 
 
-# **5. **Run time**
+# **5. Run time**
 
 
 | **Folder**         | **Estimated run time **|
