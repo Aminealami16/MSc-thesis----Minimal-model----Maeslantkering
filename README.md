@@ -64,4 +64,47 @@ In the thesis, I propose three different sensor layouts. In this part of the rep
 
 # **4. Model updating optimisations (Only OP1)**
 
-TBD.
+The model updating folder `05model_updating` must be run in the correct sequence, following the numbering of the files within this folder! Some of the files export `.npy` or `.csv` files, which are input in the subsequent files. These files cannot be found in the repository because they are too large. The files must be run locally to obtain results of the model updating optimisations. The file tree is as follows:
+
+```text
+05model_updating/
+├── csv_files/
+│   └── ...
+├── param_spaces/
+│   └── ...
+├── 00constructed_param_spaces.ipynb
+├── 01data_set_flipping.ipynb
+├── 02MC_optimisation_general.ipynb
+├── 03MC_optimisation_gaussian.ipynb
+├── 04MC_optimisation_plots_general.ipynb
+├── 05MC_optimisation_plots_gaussian.ipynb
+└── 06_single_objective_optimisation.ipynb
+```
+
+
+# **5. **Run time**
+
+
+| **Folder**         | **Estimated run time **|
+|--------------------|-----------------------------|
+| `00models_OP1`       |  $\approx$ 60 min  (model $\approx$ 1 min \& sensitivity analyses $\approx$ 59 min)        |
+| `01models_OP2`         |  $\approx$ 60 min (model $\approx$ 1 min \& sensitivity analyses $\approx$ 59 min)           |
+| `02models_OP3`     |  $\approx$ 60 min (model $\approx$ 1 min \& sensitivity analyses $\approx$ 59 min)           |
+|`03model_comparisons`|  $\approx$ 1 min           |
+| `04sensor_layouts` |    $\approx$ 30 min         |
+|  `05model_updating`|     $\approx$ 16 hrs (mainly in constructing parameter spaces $\approx$ 13 hrs)                        |
+
+
+# **6. Computer hardware**
+
+The code was executed on an **HP ZBook Power G7 Mobile Workstation (2021)** with the following hardware:
+
+| Component | Specification |
+|---|---|
+| **Processor** | Intel Core i7-10750H @ 2.60 GHz |
+| **CPU cores / threads** | 6 cores / 12 threads |
+| **Memory (RAM)** | 16 GB |
+| **GPU** | NVIDIA Quadro T1000 Max-Q, 4 GB |
+| **Integrated GPU** | Intel UHD Graphics |
+| **Operating system** | Windows 11 Home, 64-bit |
+| **Storage** | 477 GB SSD |
